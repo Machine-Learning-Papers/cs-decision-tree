@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Lang;
+using Lang;
 using System.Xml;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     public class C45<T> : ID3<T>
         where T : DDataRecord

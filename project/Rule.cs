@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Lang;
+using Lang;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     public class Rule<T>
         where T : DDataRecord

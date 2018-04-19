@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Lang;
+using Lang;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     using Lang;
     using System.Xml;
-    using SimuKit.ML.Solvers;
+    using Solvers;
 
     /// <summary>
     /// Decision Tree

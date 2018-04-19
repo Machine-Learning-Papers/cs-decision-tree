@@ -4,3 +4,7 @@
 *.testsettings
 *.dll
 *.obj
+
+bin/
+obj/
+.vs/

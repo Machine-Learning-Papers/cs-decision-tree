@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Solvers;
-using SimuKit.ML.Lang;
+using Solvers;
+using Lang;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     /// <summary>
     /// IEnumerable&lt;DDataRecord&lt;string&gt;&gt; training_sample = LoadTrainingSamples();

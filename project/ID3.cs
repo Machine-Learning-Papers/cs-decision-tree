@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Lang;
-using SimuKit.ML.Solvers;
+using Lang;
+using Solvers;
 using System.Xml;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     public class ID3<T> : Classifier<T, string>
         where  T : DDataRecord

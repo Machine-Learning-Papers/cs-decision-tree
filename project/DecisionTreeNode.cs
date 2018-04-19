@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.Lang;
+using Lang;
 using System.Xml;
-using SimuKit.ML.DecisionTree.Helpers;
+using DecisionTree.Helpers;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     public class DecisionTreeNode<T>
         where T : DDataRecord
@@ -189,7 +189,7 @@ namespace SimuKit.ML.DecisionTree
 
         public string Predict(T record)
 	    {
-		    if(mSplitVariableName == DecisionTree.ClassVariableName)
+		    if(mSplitVariableName == DecisionTree.DecisionTree<T>.ClassVariableName)
 		    {
                 return PredictedLabel;
 		    }
@@ -201,7 +201,7 @@ namespace SimuKit.ML.DecisionTree
                 {
                     if (mChildren.ContainsKey(featureValue))
                     {
-                        DecisionTreeNode child = mChildren[featureValue];
+                        DecisionTreeNode<T> child = mChildren[featureValue];
                         return child.Predict(record);
                     }
                     else

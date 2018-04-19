@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SimuKit.ML.DecisionTree.Helpers;
-using SimuKit.ML.Lang;
+using DecisionTree.Helpers;
+using Lang;
 
-namespace SimuKit.ML.DecisionTree
+namespace DecisionTree
 {
     public class DecisionTreeMethods
     {

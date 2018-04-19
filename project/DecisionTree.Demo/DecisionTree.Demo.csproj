@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F721F7FE-1F93-4B4D-981D-C738D70D7FDC}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{B2CFBAF7-6194-4D4C-96CC-6B95E332324E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SimuKit.ML.DecisionTree</RootNamespace>
-    <AssemblyName>SimuKit.ML.DecisionTree</AssemblyName>
+    <RootNamespace>DecisionTree.Demo</RootNamespace>
+    <AssemblyName>DecisionTree.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,30 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C45.cs" />
-    <Compile Include="DecisionTree.cs" />
-    <Compile Include="DecisionTreeMethods.cs" />
-    <Compile Include="DecisionTreeNode.cs" />
-    <Compile Include="DecisionTreePartition.cs" />
-    <Compile Include="Helpers\CollectionExtensionMethods.cs" />
-    <Compile Include="Helpers\XmlExtensionMethods.cs" />
-    <Compile Include="ID3.cs" />
+    <Compile Include="DecisionTreeTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomEngine.cs" />
-    <Compile Include="RandomForest.cs" />
-    <Compile Include="Rule.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SimuKit.Math\SimuKit.Math.csproj">
-      <Project>{206551B4-70D2-4587-B1B8-AB276578B8F4}</Project>
-      <Name>SimuKit.Math</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SimuKit.ML\SimuKit.ML.csproj">
+    <ProjectReference Include="..\..\SimuKit.ML\csproj">
       <Project>{A0EEAC9F-645A-4C76-A960-31C79BA71417}</Project>
       <Name>SimuKit.ML</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DecisionTree.csproj">
+      <Project>{F721F7FE-1F93-4B4D-981D-C738D70D7FDC}</Project>
+      <Name>Classification</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

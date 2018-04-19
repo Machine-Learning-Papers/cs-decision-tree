@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace SimuKit.ML.DecisionTree.Helpers
+namespace DecisionTree.Helpers
 {
     public static class CollectionExtensionMethods
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-namespace SimuKit.ML.DecisionTree.Helpers
+namespace DecisionTree.Helpers
 {
     public static class XmlExtensionMethods
     {
