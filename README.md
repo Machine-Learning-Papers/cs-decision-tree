@@ -2,6 +2,14 @@
 
 Decision Trees (ID3, C45) implemented in C#
 
+# Install
+
+Run the following nuget command:
+
+```
+Install-Package cs-decision-tree
+```
+
 # Usage
 
 The [sample codes](project/DecisionTree.Demo/DecisionTreeTest.cs) below shows how to use ID3 and C45 to do classification:
